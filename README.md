@@ -5,7 +5,7 @@ Ice breaker
 
 Lesson
     Flex box in css and if time grid system.
-    The finished lecture if on my github at 
+    The finished lecture if on my github at https://github.com/akatz6/teaching-demo
 
 Set up
     Use ! to start html boilerplate code
@@ -17,5 +17,13 @@ Set up
     Command and space on Chrome and select inspect to give open developer tools
 
 Sources
-    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-    https://css-tricks.com/snippets/css/complete-guide-grid/
+    Flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+
+Flex box.
+    I looooooooooove using flex box. 
+    So far we have covered display:block and display:inline-block for the children elements to display elements on the same row. We also covered using margin to put some space between the elements, but what looks good on a big screen looks funky on a phone.
+
+    In developer tools you can play around with different sizes of screens. If you put a margin-left of 50px it might look good in one size but not great in another. On solution is to use '%' instead of 'px' but this leads to a guessing game. There is a better way and that if lex box.
+
+
