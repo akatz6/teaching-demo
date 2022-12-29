@@ -35,11 +35,11 @@ Flex box.
     great in another. On solution is to use '%' instead of 'px' but this 
     leads to a guessing game. There is a better way and that is flex box.
 
-    Lets change the parent div from display:block to display:flex.
+    Let's change the parent div from display:block to display:flex.
     What do you notice?
 
-    First lets play around with flex-direction. In order to see the differences
-    we need to make the blocks different colors. So lets see our options.
+    First let's play around with flex-direction. In order to see the differences we need to make the
+    blocks different colors. So let's see our options.
 
     Now we play around with flex-direction and my favorite flew-wrap.
 
@@ -47,20 +47,18 @@ Flex box.
     Justify-content: controls spacing along the x axis
     
     Align-items: controls spacing along the y axis. In order to see the change
-    we need to make the container height larger then the children.
+    we need to make the container height larger than the children.
     
     Align-content: if you only want the text to be covered
 
     Gap: is a fun on because it gives you great control for spacing between the items
 
-    Flex-grow: if you want a child to be larger then the others
+    Flex-grow: if you want a child to be larger than the others
 
     Align-self: This is if you want to change a specific child
 
     Two questions for you:
-        1) How awesome if flex box?
+        1) How awesome is the flex box?
         2) Are you ready to play around with it?
-
-
 
 
