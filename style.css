@@ -1,5 +1,23 @@
-.item{
-    height: 100px;
-    width: 100px;
-    background-color: blue;
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 300px;
+  align-items: stretch;
+  gap: 10%;
+}
+
+.item {
+  background-color: blue;
+}
+
+#two {
+  background-color: red;
+  flex-grow: 10;
+  align-self: flex-start;
+}
+
+#three {
+  background-color: yellow;
+  flex-grow: 5;
 }

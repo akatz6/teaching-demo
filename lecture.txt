@@ -4,8 +4,11 @@ Ice breaker
     temperature of a room by two degrees
 
 Lesson
-    Flex box in css and if time grid system.
+    Flex box in css and if time grid system. 
+    I always prepare extra just in case.
     The finished lecture if on my github at https://github.com/akatz6/teaching-demo
+    My teaching style is that I am going to show you a bunch or example that you can 
+    use as a reference.
 
 Set up
     Use ! to start html boilerplate code
@@ -17,14 +20,47 @@ Set up
     Command and space on Chrome and select inspect to give open developer tools
 
 Sources
-    Flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-    
+    Flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
     Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
 
 Flex box.
     I looooooooooove using flex box. 
-    So far we have covered display:block and display:inline-block for the children elements to display elements on the same row. We also covered using margin to put some space between the elements, but what looks good on a big screen looks funky on a phone.
+    So far we have covered display:block and display:inline-block for 
+    the children elements to display elements on the same row. We also covered
+    using margin to put some space between the elements, but what looks good
+    on a big screen looks funky on a phone.
 
-    In developer tools you can play around with different sizes of screens. If you put a margin-left of 50px it might look good in one size but not great in another. On solution is to use '%' instead of 'px' but this leads to a guessing game. There is a better way and that if lex box.
+    In developer tools you can play around with different sizes of screens.
+    If you put a margin-left of 50px it might look good in one size but not
+    great in another. On solution is to use '%' instead of 'px' but this 
+    leads to a guessing game. There is a better way and that is flex box.
+
+    Lets change the parent div from display:block to display:flex.
+    What do you notice?
+
+    First lets play around with flex-direction. In order to see the differences
+    we need to make the blocks different colors. So lets see our options.
+
+    Now we play around with flex-direction and my favorite flew-wrap.
+
+    We can do some really cool stuff with spacing using flex box. 
+    Justify-content: controls spacing along the x axis
+    
+    Align-items: controls spacing along the y axis. In order to see the change
+    we need to make the container height larger then the children.
+    
+    Align-content: if you only want the text to be covered
+
+    Gap: is a fun on because it gives you great control for spacing between the items
+
+    Flex-grow: if you want a child to be larger then the others
+
+    Align-self: This is if you want to change a specific child
+
+    Two questions for you:
+        1) How awesome if flex box?
+        2) Are you ready to play around with it?
+
+
 
 
