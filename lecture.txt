@@ -1,5 +1,5 @@
-Ice breaker
-    Name and useless superpower you want
+ Ice breaker
+    Name and minor superpower you want
     My name is Aaron and I want the ability to raise or lower the 
     temperature of a room by two degrees
 
@@ -14,6 +14,7 @@ Set up
     Use ! to start html boilerplate code
     #container will create a div with an id of container
     .item*3 will create three divs with class of item
+    Remember id's are for individual elements and classes are for groups
     Command D to select multiple elements that are the same
     Lorem2 with create Lorem text with two words
     Live Server is an extension on VS code to auto update the browser
@@ -57,8 +58,59 @@ Flex box.
 
     Align-self: This is if you want to change a specific child
 
-    Two questions for you:
-        1) How awesome is the flex box?
-        2) Are you ready to play around with it?
+Questions for you:
+    Feel free to use the google to answer
+    1) What makes flex box so awesome?
+    2) Why is flex-wrap so amazing?
+    3) Why is using Gap so much fun?
+    4) What is your favorite justify-content option and why?
 
+Grid:
+    We are probably not going to have time to finish this, so I am writing out 
+    step by step examples to explain the grid system.
 
+    Grid is an extension of Flex. Where Flex deals with one line, 
+    Grid is for two-dimensional layouts. It makes layouts so much easier
+    and they are responsive to the size of the screen.
+
+    #grid and press enter to create a parent div with an id of grid.
+    Then in the parent div type .grids*4. This will create 4 child divs with 
+    a class of grids. For each div create an id of item-<letter> (item-a, item-b, etc).
+
+    Now the fun part. Go into our css file and for grid
+    add the following
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr) 3fr 1fr;
+    grid-template-rows: 50px 250px 50px;
+    grid-template-areas:
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+
+    The display is going to be grid because that is what we are learning about.
+    I like to add a margin-top to create some space between the examples.
+    For columns we are going to create 4 of them. The first two repeat and are 1fr
+    which is a unit of space. Then the next one is 3fr and the final is 1 fr.
+    fr is for Fractional Units.
+    The rows we are going to hard code in three px values.
+    
+    We need to create a grid area for item-a to item-d and use grid area to name them.
+    In the example above I used header, main, sidebar, and footer. 
+    But you can call them Seattle, Boston, Chicago, and Phoenix (All cities I have lived in). 
+
+    Now in order to see how it works you need to give each item a unique color.
+    Now we have a simple layout.  Much easier and then using tables or using pixels.
+    Also, notice how the layout looks good in all screen sizes.
+
+    Questions for you:
+    Again feel free to use the google to answer
+    1) What makes the grid so awesome?
+    2) What happens if you change the fr from 1 to 5?
+    3) Can you use gap for grid, what options are for gap in grid?
+    4) How much easier did I just make using css?
+
+    Feel free to play around with these examples and look at the
+    link I sent you. I use those all the time.
+
+    Happy coding.
