@@ -50,8 +50,6 @@ Flex box.
     
     Align-items: controls spacing along the y axis. In order to see the change
     we need to make the container height larger than the children.
-    
-    Align-content: if you only want the text to be covered
 
     Gap: is a fun on because it gives you great control for spacing between the items
 
@@ -84,7 +82,9 @@ Grid:
     For columns we are going to create 4 of them. The first two repeat and are 1fr
     which is a unit of space. Then the next one is 3fr and the final is 1 fr.
     fr is for Fractional Units.
+    So we are going to add grid-template-columns: repeat(2, 1fr) 3fr 1fr;
     The rows we are going to hard code in three px values.
+    For rows it is grid-template-rows: 50px 200px 50px;
     
     We can place each item in the grid based on the number of rows and columns we want
     the element to cover. The grid always starts at 1 for row and 1 for column and end
