@@ -1,14 +1,18 @@
  Ice breaker
-    Name and useless superpower you want
+    Name a useless superpower you want.
     My name is Aaron and I want the ability to raise or lower the 
-    temperature of a room by two degrees
+    temperature of a room by two degrees.
 
 Lesson
-    Flex box in css and if time grid system. 
+    Flex box in css and if time the grid system. 
     I always prepare extra just in case.
     The finished lecture is on my github at https://github.com/akatz6/teaching-demo
-    My teaching style is that I am going to show you a bunch or example that you can 
-    use as a reference.
+    My teaching style is that I am going to show you a bunch of examples that you can 
+    use as a reference. If you have any questions, politely let me know.
+
+Sources
+    Flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
+    Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
 
 Set up
     Use ! to start html boilerplate code
@@ -20,10 +24,6 @@ Set up
     Lorem2 with create Lorem text with two words
     Live Server is an extension on VS code to auto update the browser
     Command and space on Chrome and select inspect to give open developer tools
-
-Sources
-    Flex: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
-    Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
 
 Flex box.
     I looooooooooove using flex box. 
@@ -40,22 +40,55 @@ Flex box.
     Let's change the parent div from display:block to display:flex.
     What do you notice?
 
-    First let's play around with flex-direction. In order to see the differences we need to make the
-    blocks different colors. So let's see our options.
+    Give each class an id. I am going to use item-a, item-b, and item-c
 
-    Now we play around with flex-direction and my favorite flew-wrap.
+    In the css file add the following code
+
+        #container{
+            display: flex;
+            margin: 40px 0;
+            height: 100px;
+        }
+        
+        .item{
+            height: 50px;
+        }
+        
+        #item-a{
+            background-color: red;
+        }
+        
+        #item-b{
+            background-color: green;
+        }
+        
+        #item-c{
+            background-color: blue;
+        }
+
+
+    First let's play around with flex-direction. So let's see our options.
+
+    Now we play around with flex-direction and my favorite is flex-wrap.
+    Under #container add flex-wrap: wrap;. 
+    Now change the screen size to 300px width and what do you notice?
 
     We can do some really cool stuff with spacing using flex box. 
     Justify-content: controls spacing along the x axis
     
-    Align-items: controls spacing along the y axis. In order to see the change
-    we need to make the container height larger than the children.
+    Align-self: controls spacing along the y axis. In the first child add the following code
+    
+    #item-a {
+        background-color: red;
+        align-self: center;
+        display: flex;
+    }
+
+    Flex-grow: if you want a child to be larger than the others. 
+    In the css for item-b add flex-grow: 3;.
+    Now play with the size of the width and watch how the second child grows
 
     Gap: is a fun on because it gives you great control for spacing between the items
-
-    Flex-grow: if you want a child to be larger than the others
-
-    Align-self: This is if you want to change a specific child
 
 Questions for you:
     Feel free to use the google to answer
@@ -65,38 +98,59 @@ Questions for you:
     4) What is your favorite justify-content option and why?
 
 Grid:
-    We are probably not going to have time to finish this, so I am writing out 
-    step by step examples to explain the grid system.
-
     Grid is an extension of Flex. Where Flex deals with one line, 
     Grid is for two-dimensional layouts. It makes layouts so much easier
     and they are responsive to the size of the screen.
 
     #grid and press enter to create a parent div with an id of grid.
     Then in the parent div type .grids*4. This will create 4 child divs with 
-    a class of grids. For each div create an id of item-<letter> (item-a, item-b, etc).
+    a class of grids. For each div create an id of item-<letter> (item-d, item-e, etc).
 
-    Now the fun part. Go into our css file and for id of grid.
+    Now the fun part. Go into our css file and for the id of grid.
     The display is going to be grid because that is what we are learning about.
     I like to add a margin-top to create some space between the examples.
     For columns we are going to create 4 of them. The first two repeat and are 1fr
     which is a unit of space. Then the next one is 3fr and the final is 1 fr.
     fr is for Fractional Units.
     So we are going to add grid-template-columns: repeat(2, 1fr) 3fr 1fr;
-    The rows we are going to hard code in three px values.
-    For rows it is grid-template-rows: 50px 200px 50px;
+    The rows we are going to hard code in four px values.
+    For rows it is grid-template-rows: 50px 200px repeat(2, 50px);
+   
+    When you inspect the element using dev tools you can see the outline of the grid.
+
+    Now we are going to color each child using their id. 
+    I am go use the same colors as we did for flex box.
     
     We can place each item in the grid based on the number of rows and columns we want
-    the element to cover. The grid always starts at 1 for row and 1 for column and end
+    the element to cover. The grid always starts at 1 for row and 1 for column and ends
     at one more than the rows or columns. For example if you have three rows and you
     want a element to cover all the rows you would start at 1 and got to 4 (3 columns plus
     one space) 
 
     We are going to use grid-column and grid-row.
-    In this case we have three rows and four columns.
-    So for item-a we are going to use grid-column: 1/5.
-    So see this we are going to need to add a background-color: red;
-    We don't need grid-row because it is the first element in the first row.
+    Here is the css
+
+        #item-d {
+            background-color: blue;
+            grid-column: 1/5;
+        }
+
+        #item-e {
+            background-color: yellow;
+            grid-column: 1/3;
+            grid-row: 2/4;
+        }
+
+        #item-f {
+            background-color: red;
+            grid-column: 4/5;
+        }
+
+        #item-g {
+            background-color: green;
+            grid-column: 1/5;
+        }
+ 
 
     Now we have a simple layout.  Much easier and then using tables or using pixels.
     Also, notice how the layout looks good in all screen sizes.
@@ -112,4 +166,6 @@ Grid:
     link I sent you. I use those all the time.
 
     Happy coding.
+
+
 
