@@ -6,12 +6,13 @@
 Lesson
     Flex box in css and if time grid system. 
     I always prepare extra just in case.
-    The finished lecture if on my github at https://github.com/akatz6/teaching-demo
+    The finished lecture is on my github at https://github.com/akatz6/teaching-demo
     My teaching style is that I am going to show you a bunch or example that you can 
     use as a reference.
 
 Set up
     Use ! to start html boilerplate code
+    In header type 'link' and select the one with the css option
     #container will create a div with an id of container
     .item*3 will create three divs with class of item
     Remember id's are for individual elements and classes are for groups
@@ -77,17 +78,7 @@ Grid:
     Then in the parent div type .grids*4. This will create 4 child divs with 
     a class of grids. For each div create an id of item-<letter> (item-a, item-b, etc).
 
-    Now the fun part. Go into our css file and for grid
-    add the following
-    display: grid;
-    margin-top: 40px;
-    grid-template-columns: repeat(2, 1fr) 3fr 1fr;
-    grid-template-rows: 50px 250px 50px;
-    grid-template-areas:
-        "header header header header"
-        "main main . sidebar"
-        "footer footer footer footer";
-
+    Now the fun part. Go into our css file and for id of grid.
     The display is going to be grid because that is what we are learning about.
     I like to add a margin-top to create some space between the examples.
     For columns we are going to create 4 of them. The first two repeat and are 1fr
@@ -95,11 +86,18 @@ Grid:
     fr is for Fractional Units.
     The rows we are going to hard code in three px values.
     
-    We need to create a grid area for item-a to item-d and use grid area to name them.
-    In the example above I used header, main, sidebar, and footer. 
-    But you can call them Seattle, Boston, Chicago, and Phoenix (All cities I have lived in). 
+    We can place each item in the grid based on the number of rows and columns we want
+    the element to cover. The grid always starts at 1 for row and 1 for column and end
+    at one more than the rows or columns. For example if you have three rows and you
+    want a element to cover all the rows you would start at 1 and got to 4 (3 columns plus
+    one space) 
 
-    Now in order to see how it works you need to give each item a unique color.
+    We are going to use grid-column and grid-row.
+    In this case we have three rows and four columns.
+    So for item-a we are going to use grid-column: 1/5.
+    So see this we are going to need to add a background-color: red;
+    We don't need grid-row because it is the first element in the first row.
+
     Now we have a simple layout.  Much easier and then using tables or using pixels.
     Also, notice how the layout looks good in all screen sizes.
 
@@ -114,3 +112,4 @@ Grid:
     link I sent you. I use those all the time.
 
     Happy coding.
+
