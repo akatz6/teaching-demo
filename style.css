@@ -1,54 +1,84 @@
-#container {
+/* body{
+  width: calc(100% - 200px);
+} */
+#flex {
+  margin: 40px;
   display: flex;
-  margin: 40px 0;
-  height: 100px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.item {
-  height: 50px;
+.flexDiv:nth-child(3) {
+  background-color: yellow;
+  /* needs to be on class not id */
 }
-
-#item-a {
+.flexDiv {
+  height: 100px;
+  width: 100px;
+  margin: 5%;
+}
+#one {
   background-color: red;
-  align-self: center;
+  flex-direction: column;
   display: flex;
+  justify-content: center;
 }
 
-#item-b {
+#two {
+  flex-grow: 2;
   background-color: green;
+}
+
+#three {
   flex-grow: 3;
 }
-
-#item-c {
-  background-color: blue;
-}
-
-#grid {
-  display: grid;
-  margin-top: 30px;
-  grid-template-columns: repeat(2, 1fr) 3fr 1fr;
-  grid-template-rows: 50px 200px repeat(2, 50px);
-}
-
-#item-d {
-  background-color: blue;
+#four {
+  background-color: yellowgreen;
   grid-column: 1/5;
 }
-
-#item-e {
-  background-color: yellow;
-  grid-column: 1/3;
+#five {
+  background-color: blue;
   grid-row: 2/4;
+  grid-column: 1/3;
 }
-
-#item-f {
+#six {
   background-color: red;
+  grid-row: 2/4;
   grid-column: 4/5;
 }
-
-#item-g {
-  background-color: green;
+#seven {
+  background-color: teal;
+  grid-row: 4/5;
   grid-column: 1/5;
+}
+#grid {
+  display: grid;
+  margin: 30px;
+  grid-template-columns: 1fr 50px repeat(2, 2fr);
+  grid-template-rows: 50px 200px repeat(2, 50px);
+}
+#buttonDiv {
+  display: flex;
+}
+#buttonOne {
+  margin: 0 auto;
+  background-color: coral;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+#buttonOne:hover {
+  background-color: red;
+}
+
+.box{
+  height: 100px;
+  width: 100px;
+  background-color: silver;
+}
+
+@media (min-width: 600px) {
+  #buttonOne {
+    padding: 40px 60px;
+    font-size: 20px;
+  }
 }
